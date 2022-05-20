@@ -1,0 +1,456 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+@charset "UTF-8";
+
+/*
+ * Google Fonts
+ * API do Google Fonts
+*/
+
+/* Fonte Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Fonte Ubuntu */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Fonte Nunito Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+/* Fonte Roboto Condensed */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+/* Variáveis CSS */
+:root {
+    /* Variáveis de fontes css */
+    --fonte01: 'Roboto', sans-serif;
+    --fonte02: 'Ubuntu', sans-serif;
+    --fonte03: 'Nunito Sans', sans-serif; 
+
+    /* Variáveis de cor */
+    --bg-primary: rgb(37, 36, 36);
+    --bg-primary-hover: rgba(37, 36, 36, 0.884);
+}
+
+p {
+    font-family: var(--fonte02);
+}
+
+body {
+    margin: 0px;
+    padding: 0%;
+    /*background-color: red;*/
+}
+
+a {
+    text-decoration: none;
+}
+
+/* FlexBox */
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.container {
+    max-width: 1100px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo do cabecalho */
+header#cabecalho {
+    margin-top: 0px;
+    background-color: var(--bg-primary);
+    height: 100px;
+    line-height: 100px;
+}
+
+/* Estilo do menu de navegação */
+header#cabecalho nav#menu ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+header#cabecalho nav#menu li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+header#cabecalho nav#menu a {
+    font-family: var(--fonte03);
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+}
+
+header#cabecalho nav#menu a:hover {
+    color: green;
+}
+
+div#menu-mobile img {
+    display: none;
+    width: 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Estilo da seção da página */
+section {
+    margin: 0px;
+}
+
+section#home {
+    width: 100%;
+    height: 733px;
+    background: url('./../_img/img-home-mulher.jpg') top center no-repeat fixed;
+}
+
+.caixa-msg {
+    width: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.caixa-msg h1 {
+    font-family: var(--fonte01);
+    font-size: 36pt;
+}
+
+.caixa-msg p {
+    font-style: normal;
+    font-size: 14pt;
+}
+
+main#conteudo-central h3 {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 2px;
+    font-size: 16pt;
+}
+
+/* Galeria de fotos */
+.cards {
+    width: 300px;
+    height: 400px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    position: relative;
+    border-radius: 5px;
+}
+
+div.galeria-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.cards-conteudo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+
+div.cards-conteudo h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 29pt;
+}
+
+div.cards-conteudo a {
+    color: #888;
+    border: 1px solid #888;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Inserindo uma imagem de fundo no carts */
+#card01 { 
+    background-image: url('./../_img/banner-animais.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#card02 {
+    background: url('./../_img/banner-arquitetura.jpg') no-repeat 100% 100%;
+}
+
+#card03 {
+    background: url('./../_img/banner-cidades.jpg') no-repeat 100% 100%;
+}
+
+#card04 {
+    background: url('./../_img/banner-decoracao.jpg') no-repeat 100% 100%;
+}
+
+#card05 {
+    background: url(./../_img/banner-esporte.jpg) no-repeat 100% 100%;
+}
+
+#card06 {
+    background: url(./../_img/banner-natureza.jpg) no-repeat 100% 100%;
+}
+
+#card07 {
+    background: url(./../_img/banner-paisagem.jpg) no-repeat;
+    background-size: cover;
+}
+
+#card08 {
+    background: url('./../_img/banner-pessoa.jpg') no-repeat 100% 100%;
+}
+
+#card09 {
+    background: url('./../_img/banner-refeicao.jpg') no-repeat 100% 100%;
+}
+
+/* Estilo da seção da equipe de funcionários */
+section#equipe {
+    background: var(--bg-primary);
+    padding-top: 15px;
+}
+
+section#equipe h3 {
+    color: #fff;
+}
+
+.equipes {
+    text-align: center;
+    color: #fff;
+}
+
+.equipes img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.equipes h4 {
+    margin-bottom: 5px;
+    padding-bottom: 0;
+}
+
+.equipes p {
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+}
+
+.flex-equipe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+/* Estilo da seção com o mapa */
+section#mapa {
+    background-color: rgb(37, 36, 36);
+    padding: 15px;
+    margin-bottom: 0px;
+}
+
+section#mapa h3 {
+    color: #fff;
+}
+
+section#mapa iframe.mapa {
+    width: 95%;
+    display: block;
+    margin: auto;
+    -webkit-box-shadow: 3px 3px 15px rgba(255, 255, 255, 0.2);
+            box-shadow: 3px 3px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Estilo da seção de formulário da página */
+#contato {
+    padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+#formulario {
+    width: 50%;
+}
+
+#formulario input {
+    display: block;
+    padding: 9px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#formulario input > * {
+    font-family: var(--fonte02);
+}
+
+#formulario input[type="reset"] {
+    margin-top:15px;
+    margin-bottom: 5px;
+}
+
+#formulario input[type="reset"],
+#formulario input[type="submit"] {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: var(--bg-primary);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#formulario input[type="reset"]:hover,
+#formulario input[type="submit"]:hover {
+    background-color: var(--bg-primary-hover);
+    color: #0f9;
+}
+
+#formulario textarea {
+    resize: none;
+    width: 100%;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+#rede-social {
+    padding: 15px;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+}
+
+#rede-social img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Seta de cima */
+footer#rodape img {
+    width: 20px;
+}
+
+/* Estilo da rodapé */
+footer#rodape {
+    text-align: center;
+    background-color: rgb(37, 36, 36);
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #fff;
+    padding: 10px;
+}
+
+footer#rodape a {
+    color: #fff;
+}
+
+footer#rodape a:hover {
+    color: rgb(224, 213, 213);
+    text-decoration: underline;
+}
+
+
+/* Responsividade */
+@media screen and (max-width: 867px) {
+
+
+    .flex-equipe {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .equipes {
+        margin-right: 35px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    #contato {
+        display: block;
+    }
+
+    #rede-social {
+        display: block;
+        width: 100%;
+    }
+
+    #rede-social img {
+        width: 15%;
+    }
+
+    #formulario {
+        display: block;
+        width: 100%;
+    }
+
+}
