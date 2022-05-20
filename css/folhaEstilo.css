@@ -475,8 +475,14 @@ footer#rodape a:hover {
 
 @media  screen and (max-width: 457px) {
     
+    /* Seção home */
+    .caixa-msg {
+        text-align: center;
+    }
+
     .caixa-msg h1 {
         font-size: 2.6em;
+        text-align: left;
     }
 
     /* Estilo do menu */
