@@ -37,6 +37,10 @@
     --bg-primary-hover: rgba(37, 36, 36, 0.884);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html,
 head,
 body {
