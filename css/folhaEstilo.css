@@ -127,6 +127,12 @@ div#menu-mobile img {
     position: relative;
 }
 
+/* Menu Mobile */
+#menu-mobile i {
+    font-size: 26pt;
+    cursor: pointer;
+}
+
 /* Estilo da seção da página */
 section {
     margin: 0px;
@@ -461,6 +467,25 @@ footer#rodape a:hover {
     #formulario {
         display: block;
         width: 100%;
+    }
+
+}
+
+@media  screen and (max-width: 457px) {
+    
+    #home {
+        position: relative;
+    }
+
+    .caixa-msg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .caixa-msg h1 {
+        font-size: 35pt;
     }
 
 }
