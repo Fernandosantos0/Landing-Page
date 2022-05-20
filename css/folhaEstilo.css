@@ -117,12 +117,14 @@ header#cabecalho nav#menu a {
     font-size: 1.1em;
     color: #fff;
     text-decoration: none;
-    -webkit-transition: all 2s;
-    -o-transition: all 2s;
-    transition: all 2s;
 }
 
 header#cabecalho nav#menu a:hover {
+    transition: all 3s;
+    -webkit-transition: all 3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+    -o-transition: all 3s;
     color: green;
 }
 
@@ -204,7 +206,6 @@ div.galeria-flex {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
             transform: translate(-50%,-50%);
 }
 
@@ -326,8 +327,7 @@ section#mapa iframe.mapa {
     width: 95%;
     display: block;
     margin: auto;
-    -webkit-box-shadow: 3px 3px 15px rgba(255, 255, 255, 0.2);
-            box-shadow: 3px 3px 15px rgba(255, 255, 255, 0.2);
+    box-shadow: 3px 3px 15px rgba(255, 255, 255, 0.2);
 }
 
 /* Estilo da seção de formulário da página */
