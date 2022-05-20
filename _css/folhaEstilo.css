@@ -37,6 +37,12 @@
     --bg-primary-hover: rgba(37, 36, 36, 0.884);
 }
 
+html,
+head,
+body {
+    scroll-behavior: smooth;
+}
+
 p {
     font-family: var(--fonte02);
 }
