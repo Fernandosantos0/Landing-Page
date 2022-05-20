@@ -98,6 +98,10 @@ header#cabecalho {
 }
 
 /* Estilo do menu de navegação */
+#menu-mobile {
+    display: none;
+}
+
 header#cabecalho nav#menu ul {
     list-style-type: none;
     text-align: center;
