@@ -75,4 +75,10 @@
         margin-right: 30px;
     }
 
+    div#menu-mobile ul {
+        width: 100vw;
+        height: 100vh;
+        list-style: none;
+        text-align: center;
+    }
 }
