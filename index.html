@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <meta charset="UTF-8"> <!-- Codificação da página -->
+        <meta charset="UTF-8"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Landing Page</title> <!-- Título da aba da página do site -->
@@ -19,11 +19,12 @@
         <![endif]-->
 
         <!-- css -->
-        <link rel="stylesheet" href="css/normalize.css"> <!-- reset  -->
-        <link rel="stylesheet" href="css/folhaEstilo.css"> <!-- estilo -->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css"> <!-- reset  -->
+        <link rel="stylesheet" type="text/css" href="css/folhaEstilo.css"> <!-- estilo -->
+        <link rel="stylesheet" type="text/css" href="css/responsividade.css"> <!-- estilo do responsivo -->
 
         <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     </head>
     <body>
         <header id="cabecalho"> <!-- Cabeçalho do topo da página -->
@@ -50,10 +51,31 @@
                     </ul>
                 </nav> <!-- Cabeçalho do topo da página -->
 
-                <div id="menu-mobile">
-                    <i class="fa-solid fa-bars"></i>
+                <div id="icone-mobile">
+                    <i class="fa-solid fa-bars" id="btnMenu"></i>
                 </div>
             </div> <!-- /Div container -->
+
+            <!-- Menu de navegação mobile -->
+            <nav id="menu-mobile">
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#galeria">Galeria</a>
+                    </li>
+                    <li>
+                        <a href="#equipe">Equipe</a>
+                    </li>
+                    <li>
+                        <a href="#mapa">Mapa</a>
+                    </li>
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav> <!-- Cabeçalho do topo da página -->
         </header> <!-- /Cabeçalho do topo da página -->
 
         <section id="home" class="flex">
@@ -169,7 +191,9 @@
             <!-- Seção com mapa -->
             <section id="mapa">
                 <h3>Mapa</h3>
-                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7358.6598621037!2d-43.43531250794375!3d-22.753134014838178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99665ad964a4eb%3A0xfe11c020f7db5dda!2sCidade%20da%20Moda!5e0!3m2!1spt-BR!2sbr!4v1651841139258!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!--<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7358.6598621037!2d-43.43531250794375!3d-22.753134014838178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99665ad964a4eb%3A0xfe11c020f7db5dda!2sCidade%20da%20Moda!5e0!3m2!1spt-BR!2sbr!4v1651841139258!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+
+                <iframe class="mapa" src="https://embed.waze.com/iframe?zoom=16&lat=-22.750635&lon=-43.432753&ct=livemap" width="600" height="450" allowfullscreen></iframe>
             </section> <!-- Seção com mapa -->
 
             <div class="container">

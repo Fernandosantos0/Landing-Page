@@ -1,10 +1,6 @@
-/* Função para captura o ano atual */
-const time = document.querySelector('time#ano');
+const menuMobile = window.document.getElementById('btnMenu');
 
-function anoAtual() {
-    const anoAtual = new Date().getFullYear();
-    return anoAtual;
-}
+const abrirMenuMobile = () => {
+};
 
-//Mostrando o ano no rodapé da página
-time.innerHTML = parseInt(anoAtual());
+menuMobile.addEventListener('click',abrirMenuMobile);

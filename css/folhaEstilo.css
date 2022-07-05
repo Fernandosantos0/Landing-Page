@@ -52,8 +52,8 @@ p {
 }
 
 body {
-    margin: 0px;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     /*background-color: red;*/
 }
 
@@ -98,10 +98,6 @@ header#cabecalho {
 }
 
 /* Estilo do menu de navegação */
-#menu-mobile {
-    display: none;
-}
-
 header#cabecalho nav#menu ul {
     list-style-type: none;
     text-align: center;
@@ -136,9 +132,17 @@ div#menu-mobile img {
 }
 
 /* Menu Mobile */
-#menu-mobile i {
+#icone-mobile {
+    display: none;
+}
+
+#icone-mobile i {
     font-size: 26pt;
     cursor: pointer;
+}
+
+#menu-mobile { /* Menu mobile */
+    display: none;
 }
 
 /* Estilo da seção da página */
@@ -436,82 +440,4 @@ footer#rodape a {
 footer#rodape a:hover {
     color: rgb(224, 213, 213);
     text-decoration: underline;
-}
-
-
-/* Responsividade */
-@media screen and (max-width: 867px) {
-
-
-    .flex-equipe {
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-    }
-
-    .equipes {
-        margin-right: 35px;
-    }
-
-}
-
-@media screen and (max-width: 600px) {
-    
-    #contato {
-        display: block;
-    }
-
-    #rede-social {
-        display: block;
-        width: 100%;
-    }
-
-    #rede-social img {
-        width: 15%;
-    }
-
-    #formulario {
-        display: block;
-        width: 100%;
-    }
-
-}
-
-@media  screen and (max-width: 457px) {
-    
-    /* Seção home */
-    .caixa-msg {
-        text-align: center;
-    }
-
-    .caixa-msg h1 {
-        font-size: 2.6em;
-        text-align: left;
-    }
-
-    /* Estilo do menu */
-    header#cabecalho nav#menu {
-        background-color: var(--bg-primary);
-        display: none; 
-    }
-
-    header#cabecalho nav#menu ul {
-        margin: 0;
-        padding: 0;
-        background-color: var(--bg-primary);
-    }
-
-    header#cabecalho nav#menu li {
-        display: block;
-        margin-top: 0;
-        margin-bottom: 0;
-        padding: 0;
-    }
-
-    #menu-mobile {
-        display: block;
-        text-align: right;
-        margin-right: 30px;
-    }
-
 }
