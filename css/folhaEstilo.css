@@ -84,16 +84,12 @@ a {
 
 .container {
     max-width: 1100px;
-    padding-top: 0;
-    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
 }
 
 /* Estilo do cabecalho */
 header#cabecalho {
-    padding-top: 0;
-    margin-top: 0px;
     background-color: var(--bg-primary);
     height: 100px;
     line-height: 100px;

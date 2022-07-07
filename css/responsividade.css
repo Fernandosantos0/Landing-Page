@@ -23,8 +23,17 @@
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 646px) {
     
+    .cards {
+        width: 90%;
+        margin-inline: auto;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
     #contato {
         display: block;
     }
