@@ -1,3 +1,9 @@
+/*
+ * Função JS para abrir e fechar o menu mobile 
+ * Data: 07 de julho de 2022
+ * @Author: Fernando Santos Pereira 
+*/
+
 const menuMobile = window.document.getElementById('btnMenu');
 
 const abrirMenuMobile = () => {

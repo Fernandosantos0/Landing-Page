@@ -5,7 +5,8 @@
 * Browsers: last 4 version
 */
 
-@charset "UTF-8";
+/* Codificação do arquivo css */
+@charset "UTF-8"; 
 
 /*
  * Google Fonts
@@ -45,6 +46,8 @@ html,
 head,
 body {
     scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
 }
 
 p {
@@ -54,7 +57,6 @@ p {
 body {
     margin: 0;
     padding: 0;
-    /*background-color: red;*/
 }
 
 a {
@@ -357,10 +359,39 @@ section#mapa iframe.mapa {
 
 #formulario input {
     display: block;
-    padding: 9px;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-top: 9px;
+    padding-bottom: 9px;
     border-radius: 5px;
     width: 100%;
     margin-bottom: 15px;
+}
+
+#formulario form input:nth-of-type(1) {
+    padding-left: 25px;
+    background: url('./../img/input-nome.png') no-repeat;
+    background-position-y: center;
+    background-position-x: 8px;
+}
+
+#formulario form input:nth-of-type(2) {
+    padding-left: 25px;
+    background: url('./../img/input-email.png') no-repeat;
+    background-position-y: center;
+    background-position-x: 8px;
+}
+
+#formulario form input:nth-of-type(3) {
+    padding-left: 25px;
+    background: url('./../img/input-telefone.png') no-repeat;
+    background-position-y: center;
+    background-position-x: 8px;
+}
+
+#formulario form input:focus,
+#formulario form textarea:focus {
+    outline: none;
 }
 
 #formulario input > * {
