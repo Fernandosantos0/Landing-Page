@@ -22,7 +22,6 @@
         <link rel="stylesheet" type="text/css" href="css/normalize.css"> <!-- reset  -->
         <link rel="stylesheet" type="text/css" href="css/folhaEstilo.css"> <!-- estilo -->
         <link rel="stylesheet" type="text/css" href="css/responsividade.css"> <!-- estilo do responsivo -->
-
     </head>
     <body>
         <header id="cabecalho"> <!-- Cabeçalho do topo da página -->
@@ -214,13 +213,13 @@
                     <div id="formulario">
                         <!-- Formulário -->
                         <form action="\" method="post" accept-charset="utf-8">
-                            <input type="text" name="nome" placeholder="Nome" required>
+                            <input type="text" name="nome" placeholder="Nome" title="Digite seu nome aqui" required>
 
-                            <input type="email" name="email" placeholder="E-mail" required>
+                            <input type="email" name="email" placeholder="E-mail" title="Digite seu e-mail aqui" required>
 
-                            <input type="text" name="telefone" placeholder="Telefone" required>
+                            <input type="text" name="telefone" placeholder="Telefone" title="Digite seu número de telefone aqui" required>
 
-                            <textarea name="coment" cols="30" rows="10" placeholder="Digite seu comentário aqui"></textarea>
+                            <textarea name="coment" required title="Digite seu comentário aqui (máximo 650 caractere)" maxlength="650" cols="30" rows="10" placeholder="Digite seu comentário aqui"></textarea>
 
                             <!-- Botão de subimição -->
                             <input type="reset" value="Limpar">

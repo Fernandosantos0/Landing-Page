@@ -440,9 +440,25 @@ section#mapa iframe.mapa {
 }
 
 #rede-social img {
-    width: 100px;
+    width: 80px;
     height: auto;
-    margin-bottom: 15px;
+    border-radius: 50%;
+    margin-bottom: 45px;
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.418);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 0;
+}
+
+#rede-social img:hover {
+    transform: translate(5px,3px);
+    -webkit-transform: translate(5px,3px);
+    -moz-transform: translate(5px,3px);
+    -ms-transform: translate(5px,3px);
+    -o-transform: translate(5px,3px);
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.521);
 }
 
 /* Seta de cima */

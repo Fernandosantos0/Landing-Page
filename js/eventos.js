@@ -4,11 +4,18 @@
  * @Author: Fernando Santos Pereira 
 */
 
-const btnForm = document.getElementById('btnEnviar');
+const form = window.document.getElementsByTagName('form');
 
+/*
 function submicao(event) {
     event.preventDefault();
-}
+    console.info('Evento submit do formulário prevenido!');
+} */
 
+/*
+form[0].addEventListener('submit',submicao); */
 
-btnForm.addEventListener('submit',sbmicao);
+form[0].addEventListener('submit',function(event) {
+    event.preventDefault();
+    console.info('Evento submit do formulário prevenido!');
+});
