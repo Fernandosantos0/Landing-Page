@@ -4,11 +4,11 @@
  * @Author: Fernando Santos Pereira 
 */
 
-const formulario = document.getElementsByTagName('form')[0];
+const btnForm = document.getElementById('btnEnviar');
 
-function submicao() {
+function submicao(event) {
     event.preventDefault();
 }
 
 
-formulario.addEventListener('submit',sbmicao);
+btnForm.addEventListener('submit',sbmicao);
