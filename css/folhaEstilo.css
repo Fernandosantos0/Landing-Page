@@ -48,6 +48,7 @@ body {
     scroll-behavior: smooth;
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 
 p {
@@ -144,10 +145,6 @@ div#menu-mobile img {
 }
 
 /* Estilo da seção da página */
-section {
-    margin: 0px;
-}
-
 section#home {
     width: 100%;
     height: 733px;
@@ -319,6 +316,7 @@ section#mapa {
     background-color: rgb(37, 36, 36);
     padding: 15px;
     margin-bottom: 0px;
+    width: 100vw;
 }
 
 section#mapa h3 {
@@ -328,8 +326,7 @@ section#mapa h3 {
 section#mapa iframe.mapa {
     width: 95%;
     display: block;
-    margin: auto;
-    box-shadow: 3px 3px 15px rgba(255, 255, 255, 0.2);
+    margin: 0 auto;
 }
 
 /* Estilo da seção de formulário da página */

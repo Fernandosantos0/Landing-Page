@@ -10,9 +10,8 @@ const form = window.document.getElementsByTagName('form');
 function submicao(event) {
     event.preventDefault();
     console.info('Evento submit do formulário prevenido!');
-} */
+} 
 
-/*
 form[0].addEventListener('submit',submicao); */
 
 form[0].addEventListener('submit',function(event) {
