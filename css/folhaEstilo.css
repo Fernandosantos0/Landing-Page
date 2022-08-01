@@ -94,6 +94,7 @@ header#cabecalho {
     background-color: var(--bg-primary);
     height: 100px;
     line-height: 100px;
+    margin-top: -20px;
 }
 
 /* Estilo do menu de navegação */
