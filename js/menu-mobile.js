@@ -17,6 +17,11 @@ const abrirMenuMobile = () => {
         menuMobile.src="./img/close-menu.svg";
     }
 
+    mobile.addEventListener('click',() => {
+        mobile.style.display = 'none';
+        menuMobile.src="./img/open-menu.svg";
+    });
+
 };
 
 menuMobile.addEventListener('click',abrirMenuMobile);
